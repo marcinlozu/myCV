@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Marcin Lozowski Curriculum Vitae</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src='jsstyle.js'></script>
 
 </head>
 <body>
 
 <header><div id="name"><h1>Marcin Łozowski</h1>
-<h3>Inżynier Mechanik</h3></div>
+<h4>Inżynier Mechanik</h4></div>
 <div id="logo"></div>
 <div id="dane">
 	<p><u>adres e-mail:</u> marcin.lozu@gmail.com</p>
@@ -21,15 +23,15 @@
 <div id="leftColumn">
 
 <section>
-<div class="headButton"><h2>Cel zawodowy</h2></div>
-<article>
+<div onclick='hideElementPurpose()' class="headButton"><h2>Cel zawodowy</h2></div>
+<article id='celZawodowy'>
 	<p>Ciągły rozwój i doskonalenie posiadanych umiejętności, stabilne zatrudnienie w nowoczesnej firmie.</p>
 </article>
 </section>
 
 <section>
-<div class="headButton"><h2>Umiejętności</h2></div>
-<article><ul>
+<div onclick='hideElementSkill()' class="headButton"><h2>Umiejętności</h2></div>
+<article id='skills'><ul>
 	<li>Umiejętność ogranizowania własnej pracy</li>
 	<li>Umiejętność pracy w zespole</li>
 	<li>Umiejętność skutecznego planowania zadań</li>
@@ -39,8 +41,8 @@
 </section>
 
 <section>
-<div class="headButton"><h2>Atuty</h2></div>
-<article>
+<div onclick='hideElementAtut()' class="headButton"><h2>Atuty</h2></div>
+<article id='atuty'>
 	<ul>
 		<li>Kreatywność</li>
 		<li>Bardzo dobra organizacja pracy</li>
@@ -50,20 +52,20 @@
 </section>
 
 <section>
-<div class="headButton"><h2>Wykształcenie</h2></div>
-<article><h3>Politechnika Śląska w Gliwicach, Wydział Mechaniczny Technologiczny</h3>
+<div onclick='hideElementEdu()' class="headButton"><h2>Wykształcenie</h2></div>
+<article id='education'><h4>Politechnika Śląska w Gliwicach, Wydział Mechaniczny Technologiczny</h3><br>
 	<h4>2013 - 2014</h4><p> <strong>Mechanika i Budowa Maszyn</strong></p>
-	<p>Specjalizacja: <strong>Przetwórstwo metali i tworzyw sztucznych</strong></p>
-	<p>Praca magisterska: <strong>Konstrukcja formy wtryskowej do celów dydaktycznych</strong></p>
+	<p>Specjalizacja: Przetwórstwo metali i tworzyw sztucznych</p>
+	<p>Praca magisterska: Konstrukcja formy wtryskowej do celów dydaktycznych</p>
 	<br>
 	<h4>2009 - 2013</h4><p><strong>Zarządzanie i Inżynieria Produkcji</strong></p>
-	<p>Specjalizacja: <strong>Budowa i eksploatacja maszyn</strong></p>
+	<p>Specjalizacja: Budowa i eksploatacja maszyn</p>
 </article>
 </section>
 
 <section>
-	<div class="headButton"><h2>Zainteresowania</h2></div>
-	<article>
+	<div onclick='hideElementHobby()' class="headButton"><h2>Zainteresowania</h2></div>
+	<article id='hobbies'>
 		<ul>
 			<li>Podróże po europie</li>
 			<li>Muzyka, koncerty rockowe</li>
@@ -73,21 +75,75 @@
 	</article>
 </section>
 
+<section>
+	<div onclick='hideElementOtherSkills()' class="headButton"><h2>Dodatkowe umiejętności</h2></div>
+	<article id='skills2'>
+		<ul>
+			<li>Znajomość obłsugi programu SolidWorks w stopniu zaawansowanym</li>
+			<li>Znajomość języka angielskiego w stopniu komunikatywnym w mowie i piśmie</li>
+			<li>prawo jazdy kategorii B</li>
+		</ul>
+	</article>
+</section>
+
 </div>
 
 <div id="rightColumn">
 <section>
-<div class="headButton"><h2>Doświadczenie zawodowe</h2></div>
-<article>
+<div onclick='hideElementExp()' class="headButton"><h2>Doświadczenie zawodowe</h2></div>
+<article id='exp'>
+	<h3>BMZ Poland Sp. z o.o.</h3><br>
+	<h4>07-2018 - obecnie</h4>	
+	<h4>Konstruktor działu Product Design</h4>
+	<p>Obecnie pracuję jako konstruktor w dziale Product Design gdzie zajmuję się projektowaniem elementów baterii, głównie elementów z tworzyw sztucznych.</p>
+	<p><b>Zadania:</b></p>
+	<ul>
+		<li>opracowanie koncepcji baterii od strony mechanicznej</li>
+		<li>przygotowanie modeli 3D oraz dokumentacji 2D zgodnie ze standardami obowiązującymi w firmie</li>
+		<li>obsługa PDM - Product Data Managment, system kontroli wersji oraz zarządzania dokumentacją projektową</li>
+	</ul>
+
+	<br>
+
+	<h3>AIB spółka z ograniczoną odpowiedzialnością sp. k.</h3><br>
+	<h4>12-2014 - 06-2018</h4>
+	<h4>Konstruktor działu R&D</h4>
+	<p><b>Zadania:</b></p>
+	<ul>
+		<li>projektowanie narzędzi do wytłaczania tworzyw sztucznych</li>
+		<li>przygotowanie modeli 3D oraz dokumentacji 2D</li>
+		<li>nadzór nad realizacją projektów</li>
+		<li>projektowanie wyrobów z tworzyw sztucznych</li>
+		<li>kontakty z działem handlowym, z klientami oraz dostawcami</li>
+		<li>poszukiwanie nowych rozwiązań produktowych</li>
+	</ul>
+
+	<br>
+
+	<h3>HL Display sp. z o.o.</h3><br>
+	<h4>01-2013 - 11-2014</h4>
+	<h4>Mechanik Utrzymania Ruchu</h4>
+	<p>
+		Pracowałem w firmie HL Display początkowo jako mechanik w dziale Utrzymania Ruchu następnie jako specjalista ds. zaopatrzenia tego działu. Początkowo na umowę-zlecenie, następnie świadcząc usługi jako jednoosobowa działalność gospodarcza.
+	</p>
+	<p><b>Zadania:</b></p>
+	<ul>
+		<li>zaopatrzenie służb utrzymania ruchu w niezbędne narzędzia</li>
+		<li>prowadzenie magazynu cześci zamiennych</li>
+		<li>kontakty z dostawcami, poszukiwanie nowych rozwiązań</li>
+		<li>pozyskiwanie nowych dostawców materiałów i usług</li>
+		<li>doradztwo techniczne, współpraca z działem technicznym oraz produkcji</li>
+		<li>kontakty z podwykonawcami w sprawie modyfikacji form wtryskowych</li>
+		<li>naprawa maszyn i urządzeń</li>
+	</ul>
 	
 </article>
 </section>
-
-
-
 </div>
+
 </main>
 <footer>created by M.Łozowski - 2019   </footer>
 
+</script>
 </body>
 </html>

@@ -1,30 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Overpass+Mono|Permanent+Marker&display=swap');
 * {
 	/*border: solid black;*/
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
-
-}
-
-body {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto auto;
-
+    
 }
 
 header {
-	font-size: 1.15rem;
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
 	display: grid;
 	grid-template-columns: 35% 30% 35%;
 	min-height: 200px;
+	width: 1200px;
+	margin: auto;
+	font-family: 'Overpass Mono', monospace;
 
 }
 
-header p {
+header p, header h2, header h4 {
 	margin: 0;
 }
 
@@ -32,6 +23,11 @@ header p {
 	align-self: start;
 	justify-self: left;
 	text-align: left;
+	font-family: 'Permanent Marker', cursive;
+}
+
+#name h4, #name h1 {
+	font-family: inherit;
 }
 
 #logo {
@@ -63,22 +59,20 @@ header div {
 
 main {
 	display: grid;
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-	grid-template-columns: 50% 50%;
-	font-size: 1.15rem;
+	grid-template-columns: 600px 600px;
+	width: 1200px;
+	margin: auto;
+	font-family: 'Encode Sans Semi Condensed', sans-serif;
 
 }
 
 #leftColumn {
-	border-right: solid gray;
-	/*margin: 0 30px 0 0;*/
+	border-right: solid #2B7A55;
 	margin: 0 0 0 0;
 	background-color: #EFEBE2;
 }
 
 #rightColumn {
-	/*margin: 0 0 0 20px;*/
 	margin: 0 0 0 0;
 	background-color: #EFEBE2;
 }
@@ -104,6 +98,8 @@ section {
 .headButton {
 	background-color: #102542;
 	color: #EFEBE2;
+	font-family: 'Overpass Mono', monospace;
+	cursor: pointer;
 
 }
 
@@ -111,22 +107,46 @@ section {
 	margin: 0;
 }
 
-article p, ul {
-	margin: 2px;
+h2, h3, h4 {
+	padding: 0 10px;
+}
+
+
+article, article p, ul {
+	margin: 2px 10px;
+	padding: 0 10px;
 }
 
 article ul {
 	list-style-type: circle;
 }
 
-article h4 {
-	margin: 0;
+article h4, article h3 {
+	margin: 0 10px;
 }
 
 footer {
 	font-size: 0.8rem;
 	text-align: right;
-	margin: 10px 0;
-	grid-column: 2 / 3;
-	grid-row: 3 / 4;
+	width: 1200px;
+	margin: auto;
 }
+
+@media only screen and (max-width: 1200px) {
+	header {
+		width: 600px;
+		font-size: 0.9rem;
+	}
+
+	main {
+		grid-template-columns: 600px;
+		width: 600px;
+
+	}
+
+	footer {
+		width: 600px;
+		text-align: center;
+	}
+}
+
