@@ -150,7 +150,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 	main {
 		grid-template-columns: auto;
 		width: auto;
@@ -165,7 +165,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 650px) {
 
 header {
 	align-items: center;
