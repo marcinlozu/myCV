@@ -134,7 +134,7 @@ footer {
 
 @media (max-width: 1200px) {
 	header {
-		width: 600px;
+		width: auto;
 		font-size: 0.9rem;
 	}
 
@@ -145,27 +145,39 @@ footer {
 	}
 
 	footer {
-		width: 600px;
+		width: auto;
 		text-align: center;
 	}
+	#leftColumn {
+	border-right: none;
+}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 	main {
+		display: block;
 		grid-template-columns: auto;
 		width: auto;
 	}
 	header {
 		width: auto;
+		grid-template-columns: auto;
 	}
 
 	footer {
 		width: auto;
 	}
 
+	#name, #dane {
+		justify-self: auto;
+	}
+		#leftColumn {
+	border-right: none;
 }
 
-@media (max-width: 650px) {
+}
+
+/*@media (max-width: 650px) {
 
 	header {
 		align-items: center;
@@ -179,4 +191,4 @@ footer {
 	footer {
 		width: auto;
 	}
-}
+}*/
