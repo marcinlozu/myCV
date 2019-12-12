@@ -150,7 +150,7 @@ footer {
 	}
 }
 
-@media only screen and (max-resolution: 720dpi) {
+@media only screen and (max-width: 900px) {
 	main {
 		grid-template-columns: auto;
 		width: auto;
@@ -163,4 +163,12 @@ footer {
 		width: auto;
 	}
 
+}
+
+@media only screen and (max-width: 610px) {
+
+header {
+	align-items: center;
+	grid-template-columns: auto;
+}
 }
