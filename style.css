@@ -132,7 +132,7 @@ footer {
 	margin: auto;
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 	header {
 		width: 600px;
 		font-size: 0.9rem;
@@ -150,7 +150,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 	main {
 		grid-template-columns: auto;
 		width: auto;
@@ -165,10 +165,18 @@ footer {
 
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
 
-header {
-	align-items: center;
-	grid-template-columns: auto;
-}
+	header {
+		align-items: center;
+		grid-template-columns: auto;
+		width: auto;
+	}
+	header {
+		width: auto;
+	}
+
+	footer {
+		width: auto;
+	}
 }
